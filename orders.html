@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Convertify Almo</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header_wrap">
+                <div class="header_left">
+                    <h1 class="header_title">
+                        Заказы АЛМО
+                    </h1>
+                    <div class="header_search">
+                        <img src="img/search-icon.svg" alt="">
+                        <input type="text" placeholder="Поиск">
+                    </div>
+                </div>
+                <div class="header_right">
+                    <div class="header_date">
+                        6 ФЕВРАЛЯ 2025
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="table" id="table">
+        <div class="container">
+            <div class="table_wrap">
+                <table class="orders-almo">
+                    <thead>
+                        <tr class="table_header">
+                            <th class="index">
+                                <div class="table_name active">
+                                    №
+                                    <img src="img/filter-icon.svg" alt="filter" class="icon">
+                                </div>
+                            </th>
+                            <th>
+                                <div class="table_name">
+                                    Артикул
+                                    <img src="img/filter-icon.svg" alt="filter" class="icon">
+                                </div>
+                            </th>
+                            <th>
+                                <div class="table_name">
+                                    Название
+                                    <img src="img/filter-icon.svg" alt="filter" class="icon">
+                                </div>
+                            </th>
+                            <th>
+                                <div class="table_name">
+                                    Количество
+                                    <img src="img/filter-icon.svg" alt="filter" class="icon">
+                                </div>
+                            </th>
+                            <th>
+                                <div class="table_name">
+                                    Код товара
+                                    <img src="img/filter-icon.svg" alt="filter" class="icon">
+                                </div>
+                            </th>
+                            <th>
+                                <div class="table_name">
+                                    Дата отправки заявки
+                                    <img src="img/filter-icon.svg" alt="filter" class="icon">
+                                </div>
+                            </th>
+                            <th>
+                                <div class="table_name">
+                                    Ожидаемая дата доставки
+                                    <img src="img/filter-icon.svg" alt="filter" class="icon">
+                                </div>
+                            </th>
+                            <th>
+                                <div class="table_name">
+                                    Этап выполнения
+                                    <img src="img/filter-icon.svg" alt="filter" class="icon">
+                                </div>
+                            </th>
+                            <th>
+                                <div class="table_name">
+                                    Статус
+                                    <img src="img/filter-icon.svg" alt="filter" class="icon">
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="index green">
+                                4987853
+                            </td>
+                            <td>
+                                B7-1102
+                            </td>
+                            <td>
+                                Профиль B-7
+                            </td>
+                            <td>
+                                2 / 60
+                            </td>
+                            <td>
+                                N-113
+                            </td>
+                            <td>
+                                3 февраля 2025
+                            </td>
+                            <td>
+                                6 февраля 2025
+                            </td>
+                            <td>
+                                6 февраля 2025
+                            </td>
+                            <td>
+                                <select class="status_select" aria-placeholder="Задайте статус">
+                                    <option value="" class="status blue">В работе</option>
+                                    <option value="" class="status yellow">Выполнен с опозданием</option>
+                                    <option value="" class="status green">Выполнено</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="index blue">
+                                4987853
+                            </td>
+                            <td>
+                                B7-1102
+                            </td>
+                            <td>
+                                Профиль B-7
+                            </td>
+                            <td>
+                                2 / 60
+                            </td>
+                            <td>
+                                N-113
+                            </td>
+                            <td>
+                                3 февраля 2025
+                            </td>
+                            <td>
+                                6 февраля 2025
+                            </td>
+                            <td>
+                                6 февраля 2025
+                            </td>
+                            <td>
+                                <select class="status_select" aria-placeholder="Задайте статус">
+                                    <option value="" class="status blue">В работе</option>
+                                    <option value="" class="status yellow">Выполнен с опозданием</option>
+                                    <option value="" class="status green">Выполнено</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="index">
+                                4987853
+                            </td>
+                            <td>
+                                B7-1102
+                            </td>
+                            <td>
+                                Профиль B-7
+                            </td>
+                            <td>
+                                2 / 60
+                            </td>
+                            <td>
+                                N-113
+                            </td>
+                            <td>
+                                3 февраля 2025
+                            </td>
+                            <td>
+                                6 февраля 2025
+                            </td>
+                            <td>
+                                6 февраля 2025
+                            </td>
+                            <td>
+                                <select class="status_select" aria-placeholder="Задайте статус">
+                                    <option value="" class="status blue">В работе</option>
+                                    <option value="" class="status yellow">Выполнен с опозданием</option>
+                                    <option value="" class="status green">Выполнено</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <div class="modal" id="modal">
+        <div class="modal_content">
+            <div class="modal_head">
+                <div class="modal_head_top">
+                    <div class="modal_head_left">
+                        <div class="modal_text">
+                            3834752
+                        </div>
+                        <div class="modal_text">
+                            <div class="modal_company">
+                                ООО «Qwerty»
+                            </div>
+                            <div class="modal_company_desc">
+                                Смирнова Елена Алексеевна
+                            </div>
+                            <div class="modal_company_desc">
+                                8 (000) 000-00-00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal_head_right">
+                        <div class="modal_text">
+                            1 февраля 2025
+                        </div>
+                        <div class="modal_text">
+                            6 февраля 2025
+                        </div>
+                    </div>
+                </div>
+                <div class="modal_head_bottom">
+                    <div class="status green">
+                        Оплачен полностью
+                    </div>
+                    <div class="modal_price">
+                        277 000 руб.
+                    </div>
+                </div>
+            </div>
+            <div class="modal_body">
+                <div class="modal_body_tabs">
+                    <div class="modal_body_tab active">
+                        Заказ
+                    </div>
+                    <div class="modal_body_tab">
+                        Этапы
+                    </div>
+                </div>
+                <div class="modal_body_content">
+                    <div class="modal_table show">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Артикул
+                                    </th>
+                                    <th>
+                                        Позиция заказа
+                                    </th>
+                                    <th>
+                                        Кол-во
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Z000602
+                                    </td>
+                                    <td>
+                                        Предмет А
+                                    </td>
+                                    <td>
+                                        3
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Z000602
+                                    </td>
+                                    <td>
+                                        Предмет А
+                                    </td>
+                                    <td>
+                                        3
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Z000602
+                                    </td>
+                                    <td>
+                                        Предмет А
+                                    </td>
+                                    <td>
+                                        3
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Z000602
+                                    </td>
+                                    <td>
+                                        Предмет А
+                                    </td>
+                                    <td>
+                                        3
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Z000602
+                                    </td>
+                                    <td>
+                                        Предмет А
+                                    </td>
+                                    <td>
+                                        3
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Z000602
+                                    </td>
+                                    <td>
+                                        Предмет А
+                                    </td>
+                                    <td>
+                                        3
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Z000602
+                                    </td>
+                                    <td>
+                                        Предмет А
+                                    </td>
+                                    <td>
+                                        3
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Z000602
+                                    </td>
+                                    <td>
+                                        Предмет А
+                                    </td>
+                                    <td>
+                                        3
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="stages modal_stages">
+                        <div class="stages_stage">
+                            <div class="stages_stage_head">
+                                Оплата
+                                <img src="img/arrow-up-icon.svg" alt="arrow up">
+                            </div>
+                            <div class="stages_stage_body">
+                                <div class="stages_stage_part">
+                                    <div class="stages_stage_part_head">
+                                        Оплачен
+                                    </div>
+                                    <div class="stages_stage_part_body">
+                                        21 января 2025
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stages_stage">
+                            <div class="stages_stage_head">
+                                Комплектация
+                                <img src="img/arrow-up-icon.svg" alt="arrow up">
+                            </div>
+                            <div class="stages_stage_body">
+                                <div class="stages_stage_part">
+                                    <div class="stages_stage_part_head">
+                                        Дозаказ
+                                    </div>
+                                    <div class="stages_stage_part_body">
+                                        21 января 2025
+                                    </div>
+                                </div>
+                                <div class="stages_stage_part">
+                                    <div class="stages_stage_part_head">
+                                        Покраска
+                                    </div>
+                                    <div class="stages_stage_part_body">
+                                        <div class="stages_stage_part">
+                                            <div class="stages_stage_part_head">
+                                                Принято
+                                            </div>
+                                            <div class="stages_stage_part_body">
+                                                21 января 2025 <br>   Расчетная дата выполнения - 21 января 2025
+                                            </div>
+                                        </div>
+                                        <div class="stages_stage_part">
+                                            <div class="stages_stage_part_head">
+                                                Выполнено
+                                            </div>
+                                            <div class="stages_stage_part_body">
+                                                21 января 2025
+                                            </div>
+                                        </div>
+                                        <div class="stages_stage_part">
+                                            <div class="stages_stage_part_head">
+                                                Отправлен на склад
+                                            </div>
+                                            <div class="stages_stage_part_body">
+                                                21 января 2025
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stages_stage_part">
+                                    <div class="stages_stage_part_head">
+                                        Скатка
+                                    </div>
+                                    <div class="stages_stage_part_body">
+                                        <div class="stages_stage_part">
+                                            <div class="stages_stage_part_head">
+                                                Принято
+                                            </div>
+                                            <div class="stages_stage_part_body">
+                                                21 января 2025 <br>   Расчетная дата выполнения - 21 января 2025
+                                            </div>
+                                        </div>
+                                        <div class="stages_stage_part">
+                                            <div class="stages_stage_part_head">
+                                                Выполнено
+                                            </div>
+                                            <div class="stages_stage_part_body">
+                                                21 января 2025
+                                            </div>
+                                        </div>
+                                        <div class="stages_stage_part">
+                                            <div class="stages_stage_part_head">
+                                                Отправлен на склад
+                                            </div>
+                                            <div class="stages_stage_part_body">
+                                                21 января 2025
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stages_stage">
+                            <div class="stages_stage_head">
+                                Комплектация фурнитуры
+                                <img src="img/arrow-up-icon.svg" alt="arrow up">
+                            </div>
+                            <div class="stages_stage_body">
+                                <div class="stages_stage_part">
+                                    <div class="stages_stage_part_head">
+                                        Начата сборка
+                                    </div>
+                                    <div class="stages_stage_part_body">
+                                        21 января 2025
+                                    </div>
+                                </div>
+                                <div class="stages_stage_part">
+                                    <div class="stages_stage_part_head">
+                                        Выполнено
+                                    </div>
+                                    <div class="stages_stage_part_body">
+                                        21 января 2025
+                                    </div>
+                                </div>
+                                <div class="stages_stage_part">
+                                    <div class="stages_stage_part_head">
+                                        Передан на сборку
+                                    </div>
+                                    <div class="stages_stage_part_body">
+                                        21 января 2025 <br> Площадка сборки №1
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stages_stage">
+                            <div class="stages_stage_head">
+                                Погрузочная площадка
+                                <img src="img/arrow-up-icon.svg" alt="arrow up">
+                            </div>
+                            <div class="stages_stage_body">
+                                <div class="stages_stage_part">
+                                    <div class="stages_stage_part_head">
+                                        Получен со склада
+                                    </div>
+                                    <div class="stages_stage_part_body">
+                                        21 января 2025
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stages_stage">
+                            <div class="stages_stage_head">
+                                Отгрузка
+                                <img src="img/arrow-up-icon.svg" alt="arrow up">
+                            </div>
+                            <div class="stages_stage_body">
+                                <div class="stages_stage_part">
+                                    <div class="stages_stage_part_head">
+                                        Назначение машины
+                                    </div>
+                                    <div class="stages_stage_part_body">
+                                        <div class="stages_stage_part_boxes">
+                                            <div class="stages_stage_part_box">
+                                                Машина №1
+                                            </div>
+                                            <div class="stages_stage_part_box">
+                                                26 января 2025
+                                            </div>
+                                            <div class="stages_stage_part_box">
+                                                12:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stages_stage_part">
+                                    <div class="stages_stage_part_head">
+                                        Ожидание машины
+                                    </div>
+                                </div>
+                                <div class="stages_stage_part">
+                                    <div class="stages_stage_part_head">
+                                        Рейс согласован
+                                    </div>
+                                    <div class="stages_stage_part_body">
+                                        Информация о рейсе - Машина №1, 26 января 2025, 12:00
+                                    </div>
+                                </div>
+                                <div class="stages_stage_part">
+                                    <div class="stages_stage_part_head">
+                                        Полная отгрузка
+                                    </div>
+                                    <div class="stages_stage_part_body">
+                                        21 января 2025
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
