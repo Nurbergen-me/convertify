@@ -28,6 +28,12 @@ button {
     cursor: pointer;
 }
 
+td {
+    &::before {
+        box-sizing: border-box;
+    }
+}
+
 input {
     border: none;
     display: block;
@@ -56,6 +62,10 @@ h1 {
     color: #25B6F3;
 }
 
+.bold {
+    font-weight: 600;
+}
+
 .container {
     width: calc(100% - 120px);
     margin: 0 auto;
@@ -74,6 +84,10 @@ h1 {
 
     &_title {
         margin-bottom: 12px;
+    }
+    &_author {
+        font-size: 28px;
+        margin-bottom: 34px;
     }
 
     &_search {
@@ -102,7 +116,36 @@ h1 {
     &_date {
         font-size: 36px;
         color: #707070;
+        margin-bottom: 7px;
     }
+
+    &_right {
+        display: flex;
+        align-items: flex-start;
+        gap: 50px;
+
+        &_names {
+            text-align: right;
+        }
+
+        &_name {
+            font-size: 26px;
+        }
+
+        &_time {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+
+            img {
+                margin-top: 15px;
+            }
+            span {
+                font-size: 62px;
+            }
+        }
+    }
+    
 }
 
 
@@ -121,6 +164,17 @@ h1 {
         border-collapse:separate; 
         border-spacing: 0 5px;
 
+        &.tasks {
+            tbody td {
+                &.index {
+                    padding-left: 74px;
+                    &::before {
+                        width: 46px;
+                    }
+                }
+            }
+        }
+
         thead tr {
             th {
                 padding-top: 10px;
@@ -137,6 +191,87 @@ h1 {
             border-radius: 6px;
             cursor: pointer;
 
+            &.status-green {
+                .index {
+                    &:before {
+                        background: #46CE54;
+                        border: none;
+                    }
+                }
+
+                .progress_wrap {
+                    border-color: #46CE54;
+                }
+
+                .progress_bar, .progress_box {
+                    background: #46CE54;
+                }
+            }
+
+            &.status-blue {
+                .index {
+                    &:before {
+                        background: #267DE1;
+                        border: none;
+                    }
+                }
+
+                .progress_bar {
+                    background: #267DE1;
+                }
+            }
+
+            &.status-yellow {
+                .index {
+                    &:before {
+                        background: #F8B600;
+                        border: none;
+                    }
+                }
+
+                .progress_wrap {
+                    border-color: #F8B600;
+                }
+
+                .progress_bar, .progress_box {
+                    background: #F8B600;
+                }
+            }
+
+            &.status-gray {
+                .index {
+                    &:before {
+                        background: #707070;
+                        border: none;
+                    }
+                }
+
+                .progress_wrap {
+                    border-color: #707070;
+                }
+
+                .progress_bar, .progress_box {
+                    background: #707070;
+                }
+            }
+
+            &.status-white {
+                .index {
+                    &:before {
+                        background: none;
+                        border: 2px solid #959595;
+                    }
+                }
+
+                .progress_wrap {
+                    border-color: #959595;
+                }
+
+                .progress_bar, .progress_box {
+                    background: #959595;
+                }
+            }
+
             td {
                 border-top: 1px solid #C5C5C5;
                 border-bottom: 1px solid #C5C5C5;
@@ -146,7 +281,7 @@ h1 {
                 padding-right: 20px;
                 overflow: hidden;
                 position: relative;
-                font-size: 16px;
+                font-size: 12px;
                 color: #707070;
                 white-space: nowrap;
 
@@ -239,7 +374,7 @@ h1 {
         justify-content: space-between;
         gap: 30px;
         width: 100%;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 400;
         color: #707070;
         text-align: left;
@@ -255,9 +390,54 @@ h1 {
 
         }
     }
+
+    .progress {
+        padding: 11px 15px 11px 12px;
+        width: 30%;
+
+        &_wrap {
+            border: 2px solid #46CE54;
+            box-shadow: 0px 1px 0.5px rgba(0, 0, 0, 0.160784);
+            border-radius: 6px;
+            padding: 3px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        &_bar {
+            background: #46CE54;
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+
+        &_box {
+            background: #46CE54;
+            width: 94px;
+            border: 2px solid #FFFFFF;
+            box-shadow: 0px 1px 0.5px rgba(0, 0, 0, 0.160784);
+            border-radius: 6px;
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #fff;
+        }
+    }
+}
+
+.company-name {
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .status {
+    font-weight: 600;
 
     &_select {
         background: #FFFFFF;
@@ -323,6 +503,19 @@ h1 {
             justify-content: space-between;
             margin-bottom: 7px;
         }
+        &_right {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        &_dates {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        &_range {
+            margin-bottom: 1px;
+        }
         &_bottom {
             display: flex;
             justify-content: space-between;
@@ -348,6 +541,7 @@ h1 {
             &.active {
                 border-color: #CBCBCB;
                 border-bottom: none;
+                font-weight: 600;
             }
         }
 
@@ -378,6 +572,7 @@ h1 {
 
     &_price {
         font-size: 16px;
+        font-weight: 600;
     }
 
     table {
@@ -387,7 +582,7 @@ h1 {
         thead {
             th {
                 font-size: 12px;
-                font-weight: 400;
+                font-weight: 600;
                 border-right: 1px solid #CBCBCB;
                 height: 100%;
                 padding: 8px 13px;
@@ -411,6 +606,7 @@ h1 {
 
         &_stage {
             border-left: 1px solid #CBCBCB;
+            padding-bottom: 5px;
 
             &:last-child {
                 border: none;
@@ -419,6 +615,7 @@ h1 {
             &_head {
                 display: flex;
                 align-items: center;
+                font-weight: 600;
                 gap: 5px;
                 margin-bottom: 6px;
                 padding-left: 16px;
@@ -450,6 +647,7 @@ h1 {
 
                 &_head {
                     margin-bottom: 1px;
+                    font-weight: 600;
                     color: #707070;
                     position: relative;
 
@@ -499,6 +697,34 @@ h1 {
     }
 }
 
+@media screen and (max-width: 1440px) {
+    .header {
+        &.tasks {
+            .header_title {
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        &.tasks {
+            .header {
+                &_right {
+                    flex-direction: column;
+                    align-items: flex-end;
+                    gap: 0;
+
+                    &_name {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 992px) {
     h1 {
         font-size: 40px;
@@ -531,6 +757,31 @@ h1 {
         }
         &_search {
             width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        &_title {
+            font-size: 40px !important;
+        }
+        &_author {
+            font-size: 18px;
+        }
+        &_date {
+            font-size: 18px;
+        }
+        &_right {
+            &_time {
+                img {
+                    margin-top: 5px;
+                    width: 36px;
+                }
+                span {
+                    font-size: 36px;
+                }
+            }
         }
     }
 }

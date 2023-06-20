@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Convertify - Задания</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header tasks" id="header">
+        <div class="container">
+            <div class="header_wrap">
+                <div class="header_left">
+                    <h1 class="header_title">
+                        Задания на смену
+                    </h1>
+                    <div class="header_author">
+                        Бригадир: Иванов А.А
+                    </div>
+                </div>
+                <div class="header_right">
+                    <div class="header_right_names">
+                        <div class="header_date">
+                            6 ФЕВРАЛЯ 2025
+                        </div>
+                        <div class="header_right_name">
+                            Смена:
+                        </div>
+                        <div class="header_right_name">
+                            День
+                        </div>
+                    </div>
+                    <div class="header_right_time">
+                        <img src="img/sunny-day.svg" alt="sun">
+                        <span>
+                            13:04
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="table" id="table">
+        <div class="container">
+            <div class="table_wrap">
+                <table class="tasks">
+                    <thead>
+                        <tr class="table_header">
+                            <th class="index">
+                                <div class="table_name active">
+                                    №
+                                    <!-- <img src="img/filter-icon.svg" alt="filter" class="icon"> -->
+                                </div>
+                            </th>
+                            <th>
+                                <div class="table_name">
+                                    Название
+                                    <!-- <img src="img/filter-icon.svg" alt="filter" class="icon"> -->
+                                </div>
+                            </th>
+                            <th>
+                                <div class="table_name">
+                                    Дата передачи
+                                    <!-- <img src="img/filter-icon.svg" alt="filter" class="icon"> -->
+                                </div>
+                            </th>
+                            <th>
+                                <div class="table_name">
+                                    Прогресс
+                                    <!-- <img src="img/filter-icon.svg" alt="filter" class="icon"> -->
+                                </div>
+                            </th>
+                            <th>
+                                <div class="table_name">
+                                    Статус
+                                    <!-- <img src="img/filter-icon.svg" alt="filter" class="icon"> -->
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="status-green">
+                            <td class="index">
+                                4987853
+                            </td>
+                            <td>
+                                Конструкция 4
+                            </td>
+                            <td>
+                                5 февраля 2024
+                            </td>
+                            <td class="progress">
+                                <div class="progress_wrap">
+                                    <div class="progress_bar" style="width: 100%;"></div>
+                                    <div class="progress_box">
+                                        10 / 10
+                                    </div>
+                                </div>
+                            </td class="status green">
+                            <td class="status green">
+                                Выполнено
+                            </td>
+                        </tr>
+                        <tr class="status-yellow">
+                            <td class="index">
+                                4987853
+                            </td>
+                            <td>
+                                Конструкция 4
+                            </td>
+                            <td>
+                                5 февраля 2024
+                            </td>
+                            <td class="progress">
+                                <div class="progress_wrap">
+                                    <div class="progress_bar" style="width: 100%;"></div>
+                                    <div class="progress_box">
+                                        10 / 10
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="status yellow">
+                                Выполнено частично
+                            </td>
+                        </tr>
+                        <tr class="status-gray">
+                            <td class="index">
+                                4987853
+                            </td>
+                            <td>
+                                Конструкция 4
+                            </td>
+                            <td>
+                                5 февраля 2024
+                            </td>
+                            <td class="progress">
+                                <div class="progress_wrap">
+                                    <div class="progress_bar" style="width: 100%;"></div>
+                                    <div class="progress_box">
+                                        10 / 10
+                                    </div>
+                                </div>
+                            </td class="status green">
+                            <td class="status gray">
+                                Остановлен
+                            </td>
+                        </tr>
+                        <tr class="status-white">
+                            <td class="index">
+                                4987853
+                            </td>
+                            <td>
+                                Конструкция 4
+                            </td>
+                            <td>
+                                5 февраля 2024
+                            </td>
+                            <td class="progress">
+                                <div class="progress_wrap">
+                                    <div class="progress_bar" style="width: 100%;"></div>
+                                    <div class="progress_box">
+                                        10 / 10
+                                    </div>
+                                </div>
+                            </td class="status green">
+                            <td class="status white">
+                                Ожидает
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -45,16 +45,18 @@ if (tabs) {
 var modalContent = document.querySelector('.modal_content')
 
 // Outside click
-document.addEventListener("click", (evt) => {
-    let targetEl = evt.target;
-    do {
-        if(targetEl == modalContent || (targetEl.tagName == 'TD' && targetEl.closest('.order'))) {
-            modal.classList.add('show')
-            // This is a click inside, does nothing, just return.
-            return;
-        }
-        targetEl = targetEl.parentNode;
-    } while (targetEl);
-        // This is a click outside. 
-        modal.classList.remove('show')
-  });
+if (modal) {
+    document.addEventListener("click", (evt) => {
+        let targetEl = evt.target;
+        do {
+            if(targetEl == modalContent || (targetEl.tagName == 'TD' && targetEl.closest('.order'))) {
+                modal.classList.add('show')
+                // This is a click inside, does nothing, just return.
+                return;
+            }
+            targetEl = targetEl.parentNode;
+        } while (targetEl);
+            // This is a click outside. 
+            modal.classList.remove('show')
+      });
+}
