@@ -576,8 +576,23 @@ h1 {
 }
 
 @media screen and (max-width: 1440px) {
+  .container {
+    width: calc(100% - 60px);
+  }
   .header.tasks .header_title {
     font-size: 50px;
+  }
+  .table table thead tr th {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .table table tbody tr td {
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: initial;
+  }
+  .table table tbody tr td.index {
+    padding-left: 24px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -593,9 +608,6 @@ h1 {
 @media screen and (max-width: 992px) {
   h1 {
     font-size: 40px;
-  }
-  .container {
-    width: calc(100% - 60px);
   }
   .header_date {
     font-size: 24px;
