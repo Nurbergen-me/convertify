@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Convertify - Склад</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header_wrap">
+                <div class="header_left">
+                    <h1 class="header_title">
+                        Склад
+                    </h1>
+                    <div class="header_search">
+                        <img src="img/search-icon.svg" alt="">
+                        <input type="text" placeholder="Поиск">
+                    </div>
+                </div>
+                <div class="header_right">
+                    <div class="header_date">
+                        6 ФЕВРАЛЯ 2025
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="table" id="table">
+        <div class="container">
+            <div class="table_wrap">
+                <table class="storage">
+                    <thead>
+                        <tr class="table_header">
+                            <th class="index">
+                                <div class="table_name active">
+                                    № заказа
+                                </div>
+                            </th>
+                            <th>
+                                <div class="table_name">
+                                    Прогресс
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="index green">
+                                4987853
+                            </td>
+                            <td>
+                                <div class="storage_steps">
+                                    <div class="storage_step green">
+                                        Поступление заказа
+                                        <span></span>
+                                    </div>
+                                    <div class="storage_step green">
+                                        Проверка наличия
+                                        <span></span>
+                                    </div>
+                                    <div class="storage_step gray">
+                                        Дозаказ
+                                        <span></span>
+                                    </div>
+                                    <div class="storage_step gray">
+                                        Покраска
+                                        <span></span>
+                                    </div>
+                                    <div class="storage_step gray">
+                                        Скатка
+                                        <span></span>
+                                    </div>
+                                    <div class="storage_step green">
+                                        Комплектация
+                                        <span></span>
+                                    </div>
+                                    <div class="storage_step green">
+                                        Погрузка
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="index blue">
+                                4987853
+                            </td>
+                            <td>
+                                <div class="storage_steps">
+                                    <div class="storage_step green">
+                                        Поступление заказа
+                                        <span></span>
+                                    </div>
+                                    <div class="storage_step yellow">
+                                        Проверка наличия
+                                        <span></span>
+                                    </div>
+                                    <div class="storage_step yellow">
+                                        Дозаказ
+                                        <span></span>
+                                    </div>
+                                    <div class="storage_step">
+                                        Покраска
+                                        <span></span>
+                                    </div>
+                                    <div class="storage_step gray">
+                                        Скатка
+                                        <span></span>
+                                    </div>
+                                    <div class="storage_step green">
+                                        Комплектация
+                                        <span></span>
+                                    </div>
+                                    <div class="storage_step green">
+                                        Погрузка
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="index">
+                                4987853
+                            </td>
+                            <td>
+                                <div class="storage_steps">
+                                    <div class="storage_step green">
+                                        Поступление заказа
+                                        <span></span>
+                                    </div>
+                                    <div class="storage_step blue">
+                                        Проверка наличия
+                                        <span></span>
+                                    </div>
+                                    <div class="storage_step">
+                                        Дозаказ
+                                        <span></span>
+                                    </div>
+                                    <div class="storage_step">
+                                        Покраска
+                                        <span></span>
+                                    </div>
+                                    <div class="storage_step gray">
+                                        Скатка
+                                        <span></span>
+                                    </div>
+                                    <div class="storage_step green">
+                                        Комплектация
+                                        <span></span>
+                                    </div>
+                                    <div class="storage_step green">
+                                        Погрузка
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer_orders">
+                <div class="footer_orders_total">
+                    Всего заказов на смену:
+                    <span>8</span>
+                </div>
+                <div class="footer_orders_stats">
+                    <div class="footer_orders_stats_item">
+                        Выполнено: 
+                        <span class="green">
+                            4 (50%) 
+                        </span>
+                    </div>
+                    <div class="footer_orders_stats_item">
+                        В работе:
+                        <span class="blue">
+                            2 (25%) 
+                        </span>
+                    </div>
+                    <div class="footer_orders_stats_item">
+                        В очереди:
+                        <span class="">
+                            2 (25%) 
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Convertify - Задания</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -19,7 +19,7 @@
                         Задания на смену
                     </h1>
                     <div class="header_author">
-                        Бригадир: Иванов А.А
+                        Бригадир: <span class="bold">Иванов А.А</span> 
                     </div>
                 </div>
                 <div class="header_right">
@@ -28,10 +28,7 @@
                             6 ФЕВРАЛЯ 2025
                         </div>
                         <div class="header_right_name">
-                            Смена:
-                        </div>
-                        <div class="header_right_name">
-                            День
+                            Смена: <span>День</span>
                         </div>
                     </div>
                     <div class="header_right_time">
@@ -51,9 +48,8 @@
                     <thead>
                         <tr class="table_header">
                             <th class="index">
-                                <div class="table_name active">
-                                    №
-                                    <!-- <img src="img/filter-icon.svg" alt="filter" class="icon"> -->
+                                <div class="table_name active centered">
+                                    № заказа
                                 </div>
                             </th>
                             <th>
@@ -63,7 +59,7 @@
                                 </div>
                             </th>
                             <th>
-                                <div class="table_name">
+                                <div class="table_name centered">
                                     Дата передачи
                                     <!-- <img src="img/filter-icon.svg" alt="filter" class="icon"> -->
                                 </div>
@@ -90,7 +86,7 @@
                             <td>
                                 Конструкция 4
                             </td>
-                            <td>
+                            <td class="centered">
                                 5 февраля 2024
                             </td>
                             <td class="progress">
@@ -112,7 +108,7 @@
                             <td>
                                 Конструкция 4
                             </td>
-                            <td>
+                            <td class="centered">
                                 5 февраля 2024
                             </td>
                             <td class="progress">
@@ -134,7 +130,7 @@
                             <td>
                                 Конструкция 4
                             </td>
-                            <td>
+                            <td class="centered">
                                 5 февраля 2024
                             </td>
                             <td class="progress">
@@ -156,7 +152,7 @@
                             <td>
                                 Конструкция 4
                             </td>
-                            <td>
+                            <td class="centered">
                                 5 февраля 2024
                             </td>
                             <td class="progress">
@@ -176,6 +172,36 @@
             </div>
         </div>
     </section>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer_orders">
+                <div class="footer_orders_total">
+                    Всего заказов на смену:
+                    <span>5</span>
+                </div>
+                <div class="footer_orders_stats">
+                    <div class="footer_orders_stats_item">
+                        Выполнено: 
+                        <span class="green">
+                            1 (20%) 
+                        </span>
+                    </div>
+                    <div class="footer_orders_stats_item">
+                        Частично:
+                        <span class="yellow">
+                            2 (40%) 
+                        </span>
+                    </div>
+                    <div class="footer_orders_stats_item">
+                        Остановлено:
+                        <span class="">
+                            2 (40%) 
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="js/main.js"></script>
 </body>
 </html>
