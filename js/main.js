@@ -60,3 +60,21 @@ if (modal) {
             modal.classList.remove('show')
       });
 }
+
+
+// Time period
+
+var time = document.querySelector('.header_right_time span')
+var dayIcon = document.querySelector('.day-icon')
+var nightIcon = document.querySelector('.night-icon')
+
+var today = new Date()
+var hour = today.getHours();
+var minute = today.getMinutes();
+time.innerHTML = hour + ":" + minute
+
+if (hour > 7 && hour < 19) {
+    nightIcon.classList.add('d-none')
+} else {
+    dayIcon.classList.add('d-none')
+}

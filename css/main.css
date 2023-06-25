@@ -22,6 +22,10 @@ a {
   color: #000;
 }
 
+.d-none {
+  display: none;
+}
+
 button {
   border: none;
   background: none;
@@ -143,6 +147,9 @@ h1 {
 .header_right_time span {
   font-size: 62px;
   font-weight: 700;
+}
+.header_right_time .night-icon {
+  width: 50px;
 }
 
 /* -------------  Table  ---------------- */
