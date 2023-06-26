@@ -65,13 +65,16 @@ if (modal) {
 // Time period
 
 var time = document.querySelector('.header_right_time span')
+var headerDate = document.querySelector('.header_date')
 var dayIcon = document.querySelector('.day-icon')
 var nightIcon = document.querySelector('.night-icon')
 
 var today = new Date()
 var hour = today.getHours();
 var minute = today.getMinutes();
+var todayDate = today.toLocaleDateString('ru', {day: 'numeric',month: 'long', year: 'numeric'})
 time.innerHTML = hour + ":" + minute
+headerDate.innerHTML = todayDate
 
 if (hour > 7 && hour < 19) {
     nightIcon.classList.add('d-none')
